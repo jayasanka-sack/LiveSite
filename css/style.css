@@ -834,4 +834,42 @@ input[type="text"] {
 }
 
 
+iframe {
+    border: none;
+}
+
+
+
+.iFrameCss{
+	text-align: center;
+}
+
+
+.projectImg{
+  width: 100%;
+  height: auto;
+}
+
+.modal{
+	width: 700px;
+	margin: 100px auto;
+  height: max-content;
+}
+
+.modal-body {
+    max-height:500px;
+    overflow:auto;
+}
+
+@media(max-width: 768px){
+    .modal {
+    width: 95%;
+    margin: 100px auto;
+
+}
+}
+
+.wrapper{
+	padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */

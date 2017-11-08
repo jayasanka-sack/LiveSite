@@ -40,6 +40,8 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+        crossorigin="anonymous"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -56,6 +58,8 @@
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="services.html">Services</a></li>
 					<li><a href="team.html">Team</a></li>
+					<li><a href="Advisory.html">Advisory Panel</a></li>
+					<li><a href="livec.html">Live Contributors</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -71,137 +75,103 @@
 				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 			</div>
 		</header>
-		<div id="fh5co-portfolio-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center heading-section">
-						<h2>Our Projects</h2>
-						<h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
-					</div>
-				</div>
+		
+		 <section id="YoutubeVideos" class="text-center">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('TJ6ifrCzEpc')">
+                        <img class="projectImg" src="images/UtubeThumbs/Chaminda.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('Ktu6FFPKBMw')">
+                        <img class="projectImg" src="images/UtubeThumbs/Rangika.jpg" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('nV2fFUsZPP8')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('VWbRWxkMDw')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+            </div>
 
-				<div id="portfoliolist">
-					
-					<div class="portfolio all logo animate-box" data-cat="logo">
-						<div class="portfolio-wrapper">				
-							<img src="images/portfolio_pic1.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Camera</a>
-									<span class="text-category">Logo</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>				
+            <div class="row ">
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('TJ6ifrCzEpc')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('Ktu6FFPKBMw')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('uuKzLSoflyo')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('Y01WwyOq2Xk')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+            </div>
 
-					<div class="portfolio all card web animate-box" data-cat="card">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic2.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Card</a>
-									<span class="text-category">Card</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>		
-					
-					<div class="portfolio all web animate-box" data-cat="web">
-						<div class="portfolio-wrapper">						
-							<img src="images/portfolio_pic3.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Sonor's Design</a>
-									<span class="text-category">Web design</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>				
-					
-					<div class="portfolio all card animate-box" data-cat="card">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic4.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Typography Company</a>
-									<span class="text-category">Business card</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>	
-								
-					<div class="portfolio all app animate-box" data-cat="app">
-						<div class="portfolio-wrapper">
-							<img src="images/portfolio_pic5.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Weatherette</a>
-									<span class="text-category">App</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>			
-					
-					<div class="portfolio all card animate-box" data-cat="card">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic6.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">BMF</a>
-									<span class="text-category">Business card</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>	
-					
-					<div class="portfolio all card animate-box" data-cat="card">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic7.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Techlion</a>
-									<span class="text-category">Business card</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>	
-					
-					<div class="portfolio all logo animate-box" data-cat="logo">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic8.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">KittyPic</a>
-									<span class="text-category">Logo</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>
+            <div class="row ">
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('ocvNtwx1qSY')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('sg5tvNd3Qcs')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('O4GJXYmNcIc')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+                <div class="col-lg-3 wrapper">
+                    <a onclick="changeVideo('16yXt6LG-7E')">
+                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    </a>
+                </div>
+            </div>
 
-					<div class="portfolio all icon animate-box" data-cat="icon">
-						<div class="portfolio-wrapper">			
-							<img src="images/portfolio_pic9.jpg" alt="" />
-							<div class="label">
-								<div class="label-text">
-									<a class="text-title">Domino's Pizza</a>
-									<span class="text-category">Icon</span>
-								</div>
-								<div class="label-bg"></div>
-							</div>
-						</div>
-					</div>																											
-				</div>
-			</div>
-		</div>
-		<!-- END fh5co-portfolio-section -->
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/TJ6ifrCzEpc" frameborder="0" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+		
 		<footer>
 			<div id="footer" class="fh5co-border-line">
 				<div class="container">
@@ -267,7 +237,27 @@
 		
 	});	
 	</script>
-
+	 <script language="javascript" type="text/javascript">
+         $(function(){
+             $('#close').click(function(){      
+             $('iframe').attr('src', $('iframe').attr('src'));
+        });
+ });
+ </script>
+ <script language="javascript" type="text/javascript">
+         $(document).ready(function () {
+             $("#myModal").on("hidden.bs.modal", function () {
+                 $("#iframeYoutube").attr("src", "#");
+             })
+         })
+ 
+        function changeVideo(vId) {
+             var iframe = document.getElementById("iframeYoutube");
+             iframe.src = "https://www.youtube.com/embed/" + vId;
+ 
+             $("#myModal").modal("show");
+         }
+     </script>
 	</body>
 </html>
 
