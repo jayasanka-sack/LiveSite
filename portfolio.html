@@ -91,11 +91,11 @@
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('nV2fFUsZPP8')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/Biman.png" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
-                    <a onclick="changeVideo('VWbRWxkMDw')">
+                    <a onclick="changeVideo('HRy6ueSkHvk')">
                         <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
                     </a>
                 </div>
@@ -103,23 +103,23 @@
 
             <div class="row ">
                 <div class="col-lg-3 wrapper">
-                    <a onclick="changeVideo('TJ6ifrCzEpc')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                    <a onclick="changeVideo('zbMsQIpq8q4')">
+                        <img class="projectImg" src="images/UtubeThumbs/shameera.png" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('Ktu6FFPKBMw')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/Arosha.png" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('uuKzLSoflyo')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/shafraz2.png" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('Y01WwyOq2Xk')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/banu.png" />
                     </a>
                 </div>
             </div>
@@ -127,51 +127,28 @@
             <div class="row ">
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('ocvNtwx1qSY')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/asiri.jpg" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('sg5tvNd3Qcs')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/Hybriteq.png" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('O4GJXYmNcIc')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/surfedge.jpg" />
                     </a>
                 </div>
                 <div class="col-lg-3 wrapper">
                     <a onclick="changeVideo('16yXt6LG-7E')">
-                        <img class="projectImg" src="images/UtubeThumbs/Haritha.png" />
+                        <img class="projectImg" src="images/UtubeThumbs/Sirimevan.png" />
                     </a>
                 </div>
             </div>
-
-
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-
-                            <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/TJ6ifrCzEpc" frameborder="0" allowfullscreen></iframe>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+		
         </div>
     </section>
-
-
-		
 		<footer>
 			<div id="footer" class="fh5co-border-line">
 				<div class="container">
@@ -193,6 +170,26 @@
 	</div>
 	
 
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+
+                            <iframe id="iframeYoutube" width="560" height="315" src="https://www.youtube.com/embed/TJ6ifrCzEpc" frameborder="0" allowfullscreen></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -206,7 +203,28 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-
+	 <script language="javascript" type="text/javascript">
+         $(function(){
+             $('#close').click(function(){      
+             $('iframe').attr('src', $('iframe').attr('src'));
+        });
+	 });
+ </script>
+ <script language="javascript" type="text/javascript">
+         $(document).ready(function () {
+             $("#myModal").on("hidden.bs.modal", function () {
+                 $("#iframeYoutube").attr("src", "#");
+             })
+         })
+ 
+        function changeVideo(vId) {
+             var iframe = document.getElementById("iframeYoutube");
+             iframe.src = "https://www.youtube.com/embed/" + vId;
+ 
+             $("#myModal").modal("show");
+         }
+		 
+     </script>
 	<script type="text/javascript">
 	$(function () {
 		
@@ -237,27 +255,6 @@
 		
 	});	
 	</script>
-	 <script language="javascript" type="text/javascript">
-         $(function(){
-             $('#close').click(function(){      
-             $('iframe').attr('src', $('iframe').attr('src'));
-        });
- });
- </script>
- <script language="javascript" type="text/javascript">
-         $(document).ready(function () {
-             $("#myModal").on("hidden.bs.modal", function () {
-                 $("#iframeYoutube").attr("src", "#");
-             })
-         })
- 
-        function changeVideo(vId) {
-             var iframe = document.getElementById("iframeYoutube");
-             iframe.src = "https://www.youtube.com/embed/" + vId;
- 
-             $("#myModal").modal("show");
-         }
-     </script>
 	</body>
 </html>
 
