@@ -714,7 +714,7 @@ input[type="text"] {
 
 .slider {
 	position: relative;	
-	padding-top:70px;
+	padding-top:0px;
 }
 
 .slider img {
